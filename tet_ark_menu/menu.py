@@ -36,7 +36,7 @@ class Menu:
             mp = pygame.mouse.get_pos()
 
             for i in self.buttons:
-                if i['x'] < mp[0] < i['x'] and i['y'] < mp[1] < i['y'] + 50:
+                if i['x'] < mp[0] < i['x'] + 100 and i['y'] < mp[1] < i['y'] + 100:
                     button = i['number']
 
             self.render(screen, font_menu, button)
